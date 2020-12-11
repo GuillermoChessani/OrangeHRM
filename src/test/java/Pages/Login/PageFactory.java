@@ -33,7 +33,7 @@ public class PageFactory {
 	
 	// --------------------------	DASHBOARD	------------------------------
 	
-		By btnAssignLeave = By.xpath("//span[.='Assign Leave']");
+		By btnAssignLeave = By.xpath("//span[.='Asignar Permiso']");
 		By txtEmployeeName = By.id("assignleave_txtEmployee_empName");
 		By cmbLeaveType = By.id("assignleave_txtLeaveType");
 		By calFromDate = By.id("assignleave_txtFromDate");

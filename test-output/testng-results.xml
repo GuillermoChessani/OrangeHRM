@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25128" started-at="2020-12-11T23:12:19Z" finished-at="2020-12-11T23:12:44Z">
+  <suite name="Default suite" duration-ms="29705" started-at="2020-12-11T23:23:21Z" finished-at="2020-12-11T23:23:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25128" started-at="2020-12-11T23:12:19Z" finished-at="2020-12-11T23:12:44Z">
-      <class name="Tests.Login.Test_Login_ForgotPassword_Cancel">
-        <test-method status="PASS" signature="TestSetUp()[pri:0, instance:Tests.Login.Test_Login_ForgotPassword_Cancel@5e3a8624]" name="TestSetUp" is-config="true" duration-ms="11200" started-at="2020-12-11T23:12:19Z" finished-at="2020-12-11T23:12:30Z">
+    <test name="Default test" duration-ms="29705" started-at="2020-12-11T23:23:21Z" finished-at="2020-12-11T23:23:50Z">
+      <class name="Tests.Tests.Dashboard.Test_AssignLeave">
+        <test-method status="PASS" signature="TestSetUp()[pri:0, instance:Tests.Tests.Dashboard.Test_AssignLeave@5e3a8624]" name="TestSetUp" is-config="true" duration-ms="9691" started-at="2020-12-11T23:23:21Z" finished-at="2020-12-11T23:23:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestSetUp -->
-        <test-method status="PASS" signature="TestLogin()[pri:0, instance:Tests.Login.Test_Login_ForgotPassword_Cancel@5e3a8624]" name="TestLogin" duration-ms="5110" started-at="2020-12-11T23:12:30Z" finished-at="2020-12-11T23:12:35Z">
+        <test-method status="PASS" signature="Test_AssignLeave()[pri:0, instance:Tests.Tests.Dashboard.Test_AssignLeave@5e3a8624]" name="Test_AssignLeave" duration-ms="13290" started-at="2020-12-11T23:23:30Z" finished-at="2020-12-11T23:23:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestLogin -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.Login.Test_Login_ForgotPassword_Cancel@5e3a8624]" name="afterTest" is-config="true" duration-ms="8748" started-at="2020-12-11T23:12:35Z" finished-at="2020-12-11T23:12:44Z">
+        </test-method> <!-- Test_AssignLeave -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.Tests.Dashboard.Test_AssignLeave@5e3a8624]" name="afterTest" is-config="true" duration-ms="6632" started-at="2020-12-11T23:23:44Z" finished-at="2020-12-11T23:23:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- Tests.Login.Test_Login_ForgotPassword_Cancel -->
+      </class> <!-- Tests.Tests.Dashboard.Test_AssignLeave -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
