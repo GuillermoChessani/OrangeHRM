@@ -112,7 +112,7 @@ public class PageFactory {
 		
 		public void selectLeaveType() {
 			Select drpLeaveType = new Select(driver.findElement(cmbLeaveType));
-			drpLeaveType.selectByVisibleText("Paternity US");
+			drpLeaveType.selectByVisibleText("US - Personal");
 		}
 		
 		public void setDateFrom() {

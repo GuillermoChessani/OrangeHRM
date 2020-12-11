@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22129" started-at="2020-10-07T20:15:08Z" finished-at="2020-10-07T20:15:30Z">
+  <suite name="Default suite" duration-ms="26307" started-at="2020-12-11T22:42:08Z" finished-at="2020-12-11T22:42:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22129" started-at="2020-10-07T20:15:08Z" finished-at="2020-10-07T20:15:30Z">
+    <test name="Default test" duration-ms="26307" started-at="2020-12-11T22:42:08Z" finished-at="2020-12-11T22:42:34Z">
       <class name="Tests.Tests.Dashboard.Test_AssignLeave">
-        <test-method status="PASS" signature="TestSetUp()[pri:0, instance:Tests.Tests.Dashboard.Test_AssignLeave@5e3a8624]" name="TestSetUp" is-config="true" duration-ms="8552" started-at="2020-10-07T20:15:08Z" finished-at="2020-10-07T20:15:16Z">
+        <test-method status="PASS" signature="TestSetUp()[pri:0, instance:Tests.Tests.Dashboard.Test_AssignLeave@5e3a8624]" name="TestSetUp" is-config="true" duration-ms="10756" started-at="2020-12-11T22:42:08Z" finished-at="2020-12-11T22:42:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestSetUp -->
-        <test-method status="PASS" signature="Test_AssignLeave()[pri:0, instance:Tests.Tests.Dashboard.Test_AssignLeave@5e3a8624]" name="Test_AssignLeave" duration-ms="7688" started-at="2020-10-07T20:15:16Z" finished-at="2020-10-07T20:15:24Z">
+        <test-method status="PASS" signature="Test_AssignLeave()[pri:0, instance:Tests.Tests.Dashboard.Test_AssignLeave@5e3a8624]" name="Test_AssignLeave" duration-ms="9007" started-at="2020-12-11T22:42:18Z" finished-at="2020-12-11T22:42:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_AssignLeave -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.Tests.Dashboard.Test_AssignLeave@5e3a8624]" name="afterTest" is-config="true" duration-ms="5840" started-at="2020-10-07T20:15:24Z" finished-at="2020-10-07T20:15:30Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.Tests.Dashboard.Test_AssignLeave@5e3a8624]" name="afterTest" is-config="true" duration-ms="6483" started-at="2020-12-11T22:42:28Z" finished-at="2020-12-11T22:42:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
