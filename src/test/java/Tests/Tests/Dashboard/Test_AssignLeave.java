@@ -30,17 +30,20 @@ public class Test_AssignLeave {
 		driver.manage().deleteAllCookies();
 		driver.get("https://opensource-demo.orangehrmlive.com");
 		Login.doAValidLogin();
-	/*	pf.clickAssignLeave();
-		pf.setEmployeeName();
-		pf.selectLeaveType();
-		pf.setDateFrom();
+		pf.clickAssignLeave();
 		pf.setDateTo();
+		pf.setDateFrom();
 		pf.setComments();
 		pf.submitLeave();
-	*/	
-		pf.clickLinkAdmin();
-		pf.clickaUser();
 		
+		pf.setEmployeeName();
+		pf.selectLeaveType();
+			
+		pf.submitLeave();
+		
+	/*	pf.clickLinkAdmin();
+		pf.clickaUser();
+	*/	
 		
 		}
 

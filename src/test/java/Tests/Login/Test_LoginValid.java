@@ -25,11 +25,14 @@ public class Test_LoginValid {
 
 	@Test
 	public void TestLogin() throws InterruptedException {
-		
+		PageFactory pf = new PageFactory(driver);
 		driver.manage().deleteAllCookies();
 		driver.get("https://opensource-demo.orangehrmlive.com");
 		doAValidLogin();
-		}
+		
+
+		
+	}
 	
 	
 	@AfterTest
@@ -43,5 +46,6 @@ public class Test_LoginValid {
 		pf.setUserName();
 		pf.setPassword();
 		pf.clickLogin();
+		pf.assertWelcome();
 	}
 }

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class PageFactory {
 	private static WebDriver driver;
@@ -24,6 +25,9 @@ public class PageFactory {
 	By btnReset = By.id("btnSearchValues");
 	By btnCancel = By.id("btnCancel");
 	
+	By welcomeLink = By.id("welcome");
+
+    
 	By linkAdmin = By.xpath("//b[.='Admin']");
 	By aUser = By.xpath("//a[.='steven.edwards']");
 	
@@ -33,7 +37,9 @@ public class PageFactory {
 		By txtEmployeeName = By.id("assignleave_txtEmployee_empName");
 		By cmbLeaveType = By.id("assignleave_txtLeaveType");
 		By calFromDate = By.id("assignleave_txtFromDate");
+		By lblFromDate = By.xpath("//*[@for='assignleave_txtFromDate']");
 		By calToDate = By.id("assignleave_txtToDate");
+		By lblToDate = By.xpath("//*[@for='assignleave_txtToDate']");
 		By txtComment = By.id("assignleave_txtComment");
 		By btnSubmitAssignLeave = By.id("assignBtn");
 	
@@ -85,6 +91,11 @@ public class PageFactory {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(btnCancel)).click();
 	}
 	
+	public void assertWelcome(){
+		Assert.assertEquals(true, driver.findElement(welcomeLink).isDisplayed());
+		
+	}
+	
 	
 	// --------------------------	DASHBOARD	------------------------------
 	
@@ -106,12 +117,18 @@ public class PageFactory {
 		
 		public void setDateFrom() {
 			wait = new WebDriverWait(driver, 15);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(calFromDate)).sendKeys("2017/07/07");
+			wait.until(ExpectedConditions.visibilityOfElementLocated(calFromDate)).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(calFromDate)).sendKeys("07-10-2020");
+			wait.until(ExpectedConditions.visibilityOfElementLocated(lblFromDate)).click();
+			
 		}
 		
 		public void setDateTo() {
 			wait = new WebDriverWait(driver, 15);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(calToDate)).sendKeys("2017/07/14");
+			wait.until(ExpectedConditions.visibilityOfElementLocated(calToDate)).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(calToDate)).sendKeys("14-10-2020");
+			wait.until(ExpectedConditions.visibilityOfElementLocated(lblToDate)).click();
+			
 		}
 		
 		public void setComments() {

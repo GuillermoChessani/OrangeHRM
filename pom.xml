@@ -3,6 +3,8 @@
   <groupId>OrangeHRM</groupId>
   <artifactId>OrangeHRM</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+ <name>simple</name>
+ 
   <dependencies>
   
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -33,7 +35,23 @@
     <artifactId>testlink-java-api</artifactId>
     <version>1.9.20-1</version>
 </dependency>
+</dependencies>
 
-  
-  </dependencies>
+ <profiles> 
+            <profile>
+                <id>production</id> 
+                    <build> 
+                            <plugins>
+                                <plugin>
+                                    <groupId>org.apache.maven.plugins</groupId>
+                                    <artifactId>maven-compiler-plugin</artifactId>
+                                    <configuration>
+                                        <debug>false</debug> 
+                                            <optimize>true</optimize>
+                                    </configuration>
+                                </plugin>
+                            </plugins>
+                    </build>
+            </profile>
+    </profiles>
 </project>
