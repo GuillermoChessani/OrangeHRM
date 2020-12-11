@@ -20,7 +20,7 @@ public class PageFactory {
 	By txtUserName = By.name("txtUsername");
 	By txtPassword = By.name("txtPassword");
 	By btnLogin = By.name("Submit");
-	By linkForgotPassword = By.linkText("Forgot your password?");
+	By linkForgotPassword = By.linkText("¿Olvidó su contraseña?");
 	By txtAuthentication_userName = By.id("securityAuthentication_userName");
 	By btnReset = By.id("btnSearchValues");
 	By btnCancel = By.id("btnCancel");
