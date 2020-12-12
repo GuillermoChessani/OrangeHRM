@@ -1,34 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	<test thread-count="1" name="Test1">
+<suite name="Tests_Login" parallel="methods" thread-count="3">
+	<test name="Test1">
 		<classes>
 			<class name="Tests.Login.Test_LoginValid" />
 		</classes>
 	</test> 
-	<test thread-count="2" name="Test2">
+	<test name="Test2">
 		<classes>
 			<class name="Tests.Login.Test_LoginInvalid_NoUser" />
 		</classes>
 	</test>
-	<test thread-count="3" name="Test3">
+	<test name="Test3">
 		<classes>
 			<class name="Tests.Login.Test_LoginInvalid_NoPassword" />
 		</classes>
 	</test>
-	<test thread-count="4" name="Test4">
+	<test name="Test4">
 		<classes>
 			<class name="Tests.Login.Test_LoginInvalid_UserorPasswordIncorrect" />
 		</classes>
 	</test>
-	<test thread-count="5" name="Test5">
+	<test name="Test5">
 		<classes>
 			<class name="Tests.Login.Test_Login_ForgotPassword_Cancel" />
 		</classes>
 	</test>
-	<test thread-count="6" name="Test6">
+	<test name="Test6">
 		<classes>
 			<class name="Tests.Login.Test_Login_ForgotPassword_Reset" />
 		</classes>
 	</test>
+	<test name="Test7">
+		<classes>
+			<class name="Tests.Dashboard.AssignLeave" />
+		</classes>
+	</test> 
+	<test name="Test8">
+		<classes>
+			<class name="Tests.Dashboard.ApplyLeave" />
+		</classes>
+	</test>
 </suite> 
+
+	

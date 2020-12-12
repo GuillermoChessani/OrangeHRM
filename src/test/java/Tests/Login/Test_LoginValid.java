@@ -37,8 +37,6 @@ public class Test_LoginValid {
 	
 	@AfterTest
 	public void afterTest() throws InterruptedException {
-		Thread.sleep(5000);
-		driver.close();
 		driver.quit();
 	}
 

@@ -11,16 +11,16 @@ import org.testng.Assert;
 public class PageFactory {
 	private static WebDriver driver;
 	WebElement element;
-	String varUser = "Admin";
-	String varPass = "admin123";
-	String varMail = "admin@hotmail.com";
+	public static String varUser = "Admin";
+	public static String varPass = "admin123";
+	public static String varMail = "admin@hotmail.com";
 	
 	WebDriverWait wait;
 	
 	By txtUserName = By.name("txtUsername");
 	By txtPassword = By.name("txtPassword");
 	By btnLogin = By.name("Submit");
-	By linkForgotPassword = By.linkText("¿Olvidó su contraseña?");
+	By linkForgotPassword = By.linkText("Forgot your password?");
 	By txtAuthentication_userName = By.id("securityAuthentication_userName");
 	By btnReset = By.id("btnSearchValues");
 	By btnCancel = By.id("btnCancel");
@@ -33,7 +33,8 @@ public class PageFactory {
 	
 	// --------------------------	DASHBOARD	------------------------------
 	
-		By btnAssignLeave = By.xpath("//span[.='Asignar Permiso']");
+	// --------------------------	ASSIGN LEAVE	------------------------------
+		By btnAssignLeave = By.xpath("//span[.='Assign Leave']");
 		By txtEmployeeName = By.id("assignleave_txtEmployee_empName");
 		By cmbLeaveType = By.id("assignleave_txtLeaveType");
 		By calFromDate = By.id("assignleave_txtFromDate");
@@ -42,7 +43,17 @@ public class PageFactory {
 		By lblToDate = By.xpath("//*[@for='assignleave_txtToDate']");
 		By txtComment = By.id("assignleave_txtComment");
 		By btnSubmitAssignLeave = By.id("assignBtn");
-	
+			// --------------------------	APPLY LEAVE	------------------------------
+		By btnApplyLeave = By.xpath("//span[.='Apply Leave']");
+		By cmbApplyType = By.id("applyleave_txtLeaveType");
+		By calApplyFromDate = By.id("applyleave_txtFromDate");
+		By lblApplyFromDate = By.xpath("//*[@for='applyleave_txtFromDate']");
+		By calApplyToDate = By.id("applyleave_txtToDate");
+		By lblApplyToDate = By.xpath("//*[@for='applyleave_txtToDate']");
+		By txtApplyComment = By.id("applyleave_txtComment");
+		By btnSubmitApplyLeave = By.id("applyBtn");
+		
+		
 	
 	
 	public PageFactory(WebDriver driver) {
@@ -99,7 +110,7 @@ public class PageFactory {
 	
 	// --------------------------	DASHBOARD	------------------------------
 	
-	
+	// --------------------------	ASSIGN LEAVE	------------------------------
 		public void clickAssignLeave() {
 			wait = new WebDriverWait(driver, 15);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(btnAssignLeave)).click();
@@ -150,4 +161,51 @@ public class PageFactory {
 			wait = new WebDriverWait(driver, 15);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(aUser)).click();
 		}
-}
+		
+		// --------------------------	APPLY LEAVE	------------------------------
+		
+		public void clickApplyLeave() {
+			wait = new WebDriverWait(driver, 15);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(btnApplyLeave)).click();
+		}
+		
+		public void selectApplyLeaveType() {
+			Select drpLeaveType = new Select(driver.findElement(cmbApplyType));
+			drpLeaveType.selectByVisibleText("US - Personal");
+		}
+		
+		
+		public void setDateApplyFrom() {
+			wait = new WebDriverWait(driver, 15);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(calApplyFromDate)).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(calApplyFromDate)).sendKeys("07-10-2020");
+			wait.until(ExpectedConditions.visibilityOfElementLocated(lblApplyFromDate)).click();
+			
+		}
+		
+		public void setDateApplyTo() {
+			wait = new WebDriverWait(driver, 15);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(calApplyToDate)).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(calApplyToDate)).sendKeys("14-10-2020");
+			wait.until(ExpectedConditions.visibilityOfElementLocated(lblApplyToDate)).click();
+			
+		}
+		
+		public void setCommentsApply() {
+			wait = new WebDriverWait(driver, 15);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(txtApplyComment)).sendKeys("Summer Vacation");
+		}
+		
+		public void submitLeaveApply() {
+			wait = new WebDriverWait(driver, 15);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(btnSubmitApplyLeave)).click();
+		}
+		
+		public void clickLinkAdminApply() {
+			wait = new WebDriverWait(driver, 15);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(linkAdmin)).click();
+		}
+		
+		
+		
+		}

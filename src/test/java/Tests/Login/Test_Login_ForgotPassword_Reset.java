@@ -38,9 +38,7 @@ public class Test_Login_ForgotPassword_Reset {
 
 	@AfterTest
 	public void afterTest() throws InterruptedException {
-		Thread.sleep(5000);
-		driver.close();
-		driver.quit();
+			driver.quit();
 	}
 
 }

@@ -1,24 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29705" started-at="2020-12-11T23:23:21Z" finished-at="2020-12-11T23:23:50Z">
+  <suite name="Default suite" duration-ms="120550" started-at="2020-12-12T06:32:47Z" finished-at="2020-12-12T06:34:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29705" started-at="2020-12-11T23:23:21Z" finished-at="2020-12-11T23:23:50Z">
-      <class name="Tests.Tests.Dashboard.Test_AssignLeave">
-        <test-method status="PASS" signature="TestSetUp()[pri:0, instance:Tests.Tests.Dashboard.Test_AssignLeave@5e3a8624]" name="TestSetUp" is-config="true" duration-ms="9691" started-at="2020-12-11T23:23:21Z" finished-at="2020-12-11T23:23:30Z">
+    <test name="Default test" duration-ms="120550" started-at="2020-12-12T06:32:47Z" finished-at="2020-12-12T06:34:48Z">
+      <class name="Tests.Login.Test_LoginInvalid_UserorPasswordIncorrect">
+        <test-method status="PASS" signature="TestLogin()[pri:0, instance:Tests.Login.Test_LoginInvalid_UserorPasswordIncorrect@31ef45e3]" name="TestLogin" duration-ms="5064" started-at="2020-12-12T06:33:43Z" finished-at="2020-12-12T06:33:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+      </class> <!-- Tests.Login.Test_LoginInvalid_UserorPasswordIncorrect -->
+      <class name="Tests.Tests.Dashboard.Test_ApproveLeave">
+        <test-method status="PASS" signature="TestSetUp()[pri:0, instance:Tests.Tests.Dashboard.Test_ApproveLeave@598067a5]" name="TestSetUp" is-config="true" duration-ms="11018" started-at="2020-12-12T06:32:47Z" finished-at="2020-12-12T06:32:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestSetUp -->
-        <test-method status="PASS" signature="Test_AssignLeave()[pri:0, instance:Tests.Tests.Dashboard.Test_AssignLeave@5e3a8624]" name="Test_AssignLeave" duration-ms="13290" started-at="2020-12-11T23:23:30Z" finished-at="2020-12-11T23:23:44Z">
+        <test-method status="PASS" signature="TestSetUp()[pri:0, instance:Tests.Tests.Dashboard.Test_AssignLeave@271053e1]" name="TestSetUp" is-config="true" duration-ms="7172" started-at="2020-12-12T06:32:58Z" finished-at="2020-12-12T06:33:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_AssignLeave -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.Tests.Dashboard.Test_AssignLeave@5e3a8624]" name="afterTest" is-config="true" duration-ms="6632" started-at="2020-12-11T23:23:44Z" finished-at="2020-12-11T23:23:50Z">
+        </test-method> <!-- TestSetUp -->
+        <test-method status="PASS" signature="TestSetUp()[pri:0, instance:Tests.Login.Test_LoginInvalid_NoPassword@14bf9759]" name="TestSetUp" is-config="true" duration-ms="6967" started-at="2020-12-12T06:33:05Z" finished-at="2020-12-12T06:33:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSetUp -->
+        <test-method status="PASS" signature="TestSetUp()[pri:0, instance:Tests.Login.Test_LoginInvalid_NoUser@5f341870]" name="TestSetUp" is-config="true" duration-ms="5922" started-at="2020-12-12T06:33:12Z" finished-at="2020-12-12T06:33:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSetUp -->
+        <test-method status="PASS" signature="TestSetUp()[pri:0, instance:Tests.Login.Test_LoginInvalid_UserorPasswordIncorrect@31ef45e3]" name="TestSetUp" is-config="true" duration-ms="5492" started-at="2020-12-12T06:33:18Z" finished-at="2020-12-12T06:33:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSetUp -->
+        <test-method status="PASS" signature="TestSetUp()[pri:0, instance:Tests.Login.Test_LoginValid@4f7d0008]" name="TestSetUp" is-config="true" duration-ms="5586" started-at="2020-12-12T06:33:24Z" finished-at="2020-12-12T06:33:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSetUp -->
+        <test-method status="PASS" signature="TestSetUp()[pri:0, instance:Tests.Login.Test_Login_ForgotPassword_Cancel@3c0ecd4b]" name="TestSetUp" is-config="true" duration-ms="7227" started-at="2020-12-12T06:33:29Z" finished-at="2020-12-12T06:33:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSetUp -->
+        <test-method status="PASS" signature="TestSetUp()[pri:0, instance:Tests.Login.Test_Login_ForgotPassword_Reset@553f17c]" name="TestSetUp" is-config="true" duration-ms="6755" started-at="2020-12-12T06:33:37Z" finished-at="2020-12-12T06:33:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSetUp -->
+        <test-method status="PASS" signature="Test_ApproveLeave()[pri:0, instance:Tests.Tests.Dashboard.Test_ApproveLeave@598067a5]" name="Test_ApproveLeave" duration-ms="10072" started-at="2020-12-12T06:33:49Z" finished-at="2020-12-12T06:33:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_ApproveLeave -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.Tests.Dashboard.Test_ApproveLeave@598067a5]" name="afterTest" is-config="true" duration-ms="1189" started-at="2020-12-12T06:34:36Z" finished-at="2020-12-12T06:34:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.Tests.Dashboard.Test_AssignLeave@271053e1]" name="afterTest" is-config="true" duration-ms="1584" started-at="2020-12-12T06:34:37Z" finished-at="2020-12-12T06:34:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.Login.Test_LoginInvalid_NoPassword@14bf9759]" name="afterTest" is-config="true" duration-ms="1539" started-at="2020-12-12T06:34:39Z" finished-at="2020-12-12T06:34:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.Login.Test_LoginInvalid_NoUser@5f341870]" name="afterTest" is-config="true" duration-ms="1513" started-at="2020-12-12T06:34:40Z" finished-at="2020-12-12T06:34:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.Login.Test_LoginInvalid_UserorPasswordIncorrect@31ef45e3]" name="afterTest" is-config="true" duration-ms="1584" started-at="2020-12-12T06:34:42Z" finished-at="2020-12-12T06:34:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.Login.Test_LoginValid@4f7d0008]" name="afterTest" is-config="true" duration-ms="1449" started-at="2020-12-12T06:34:43Z" finished-at="2020-12-12T06:34:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.Login.Test_Login_ForgotPassword_Cancel@3c0ecd4b]" name="afterTest" is-config="true" duration-ms="1509" started-at="2020-12-12T06:34:45Z" finished-at="2020-12-12T06:34:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.Login.Test_Login_ForgotPassword_Reset@553f17c]" name="afterTest" is-config="true" duration-ms="1492" started-at="2020-12-12T06:34:46Z" finished-at="2020-12-12T06:34:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Tests.Tests.Dashboard.Test_ApproveLeave -->
+      <class name="Tests.Login.Test_Login_ForgotPassword_Cancel">
+        <test-method status="PASS" signature="TestLogin()[pri:0, instance:Tests.Login.Test_Login_ForgotPassword_Cancel@3c0ecd4b]" name="TestLogin" duration-ms="4728" started-at="2020-12-12T06:33:59Z" finished-at="2020-12-12T06:34:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+      </class> <!-- Tests.Login.Test_Login_ForgotPassword_Cancel -->
+      <class name="Tests.Login.Test_LoginInvalid_NoPassword">
+        <test-method status="PASS" signature="TestLogin()[pri:0, instance:Tests.Login.Test_LoginInvalid_NoPassword@14bf9759]" name="TestLogin" duration-ms="6432" started-at="2020-12-12T06:34:03Z" finished-at="2020-12-12T06:34:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+      </class> <!-- Tests.Login.Test_LoginInvalid_NoPassword -->
+      <class name="Tests.Login.Test_LoginInvalid_NoUser">
+        <test-method status="PASS" signature="TestLogin()[pri:0, instance:Tests.Login.Test_LoginInvalid_NoUser@5f341870]" name="TestLogin" duration-ms="3520" started-at="2020-12-12T06:34:10Z" finished-at="2020-12-12T06:34:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+      </class> <!-- Tests.Login.Test_LoginInvalid_NoUser -->
+      <class name="Tests.Login.Test_Login_ForgotPassword_Reset">
+        <test-method status="PASS" signature="TestLogin()[pri:0, instance:Tests.Login.Test_Login_ForgotPassword_Reset@553f17c]" name="TestLogin" duration-ms="6735" started-at="2020-12-12T06:34:13Z" finished-at="2020-12-12T06:34:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+      </class> <!-- Tests.Login.Test_Login_ForgotPassword_Reset -->
+      <class name="Tests.Login.Test_LoginValid">
+        <test-method status="PASS" signature="TestLogin()[pri:0, instance:Tests.Login.Test_LoginValid@4f7d0008]" name="TestLogin" duration-ms="6193" started-at="2020-12-12T06:34:20Z" finished-at="2020-12-12T06:34:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+      </class> <!-- Tests.Login.Test_LoginValid -->
+      <class name="Tests.Tests.Dashboard.Test_AssignLeave">
+        <test-method status="PASS" signature="Test_AssignLeave()[pri:0, instance:Tests.Tests.Dashboard.Test_AssignLeave@271053e1]" name="Test_AssignLeave" duration-ms="9717" started-at="2020-12-12T06:34:26Z" finished-at="2020-12-12T06:34:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_AssignLeave -->
       </class> <!-- Tests.Tests.Dashboard.Test_AssignLeave -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
